@@ -3,6 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+    require "custom.plugins.go",
     require "custom.plugins.format",
     require "custom.plugins.remaps",
 }

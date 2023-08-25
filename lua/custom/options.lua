@@ -44,3 +44,11 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- No more nasty swapfile windows
+vim.opt.swapfile = false
+vim.opt.backup = false
+
+-- Enable undo history
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
