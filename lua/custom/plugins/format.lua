@@ -19,4 +19,16 @@ return {
             ignore_terminal = true,
         },
     },
+    {
+        'towolf/vim-helm'
+    },
+    {
+        'z0mbix/vim-shfmt',
+        config = function()
+            vim.g.shfmt_fmt_on_save = 1
+        end
+    },
+    {
+        'itspriddle/vim-shellcheck'
+    }
 }
