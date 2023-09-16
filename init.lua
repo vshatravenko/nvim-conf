@@ -362,8 +362,11 @@ end
 local servers = {
   -- clangd = {},
   dockerls = {},
+  docker_compose_language_service = {},
   gopls = {},
   pyright = {},
+  helm_ls = { filetypes = { 'helm' } },
+  bashls = { filetypes = { 'sh' } },
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
