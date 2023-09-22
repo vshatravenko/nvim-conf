@@ -30,5 +30,8 @@ return {
     },
     {
         'itspriddle/vim-shellcheck'
+    },
+    {
+        'fsouza/prettierd'
     }
 }
