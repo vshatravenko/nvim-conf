@@ -33,5 +33,8 @@ return {
     },
     {
         'fsouza/prettierd'
+    },
+    {
+        'ansible/ansible-lint'
     }
 }
