@@ -368,10 +368,10 @@ local servers = {
   helm_ls = { filetypes = { 'helm' } },
   bashls = { filetypes = { 'sh' } },
   ansiblels = {},
-  terraformls = {},
+  terraformls = { filetypes = { 'tf', 'tfvars', 'terraform' } },
+  tsserver = {},
+  html = { filetypes = { 'html', 'twig', 'hbs' } },
   -- rust_analyzer = {},
-  -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
 
   lua_ls = {
     Lua = {
