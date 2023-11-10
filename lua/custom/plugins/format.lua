@@ -36,5 +36,8 @@ return {
     },
     {
         'ansible/ansible-lint'
+    },
+    {
+        'rhysd/vim-wasm'
     }
 }
