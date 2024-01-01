@@ -360,7 +360,7 @@ end
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- clangd = {},
+  clangd = {},
   dockerls = {},
   -- docker_compose_language_service = {},
   gopls = {},
@@ -371,6 +371,9 @@ local servers = {
   terraformls = { filetypes = { 'tf', 'tfvars', 'terraform' } },
   tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
+  svelte = { enableTsPlugin = true },
+  elixirls = {},
+  -- yamlls = {}, # conflicts with helm
   -- rust_analyzer = {},
 
   lua_ls = {

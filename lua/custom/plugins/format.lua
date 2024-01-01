@@ -39,5 +39,5 @@ return {
     },
     {
         'rhysd/vim-wasm'
-    }
+    },
 }
