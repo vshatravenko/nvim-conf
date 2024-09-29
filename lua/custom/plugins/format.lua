@@ -40,4 +40,8 @@ return {
     {
         'rhysd/vim-wasm'
     },
+    {
+        'averms/black-nvim',
+
+    }
 }

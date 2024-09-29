@@ -6,4 +6,5 @@ return {
     require "custom.plugins.go",
     require "custom.plugins.format",
     require "custom.plugins.remaps",
+    require "custom.plugins.misc",
 }
