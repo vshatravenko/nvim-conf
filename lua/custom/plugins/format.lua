@@ -43,5 +43,31 @@ return {
     {
         'averms/black-nvim',
 
-    }
+    },
+    {
+        "stevearc/conform.nvim",
+        event = "BufWritePre", -- load the plugin before saving
+        keys = {
+            {
+                "<leader>f",
+                function() require("conform").format({ lsp_fallback = true }) end,
+                desc = "Format",
+            },
+        },
+        opts = {
+            formatters_by_ft = {
+                -- first use isort and then black
+                python = { "isort", "black" },
+                -- "inject" is a special formatter from conform.nvim, which
+                -- formats treesitter-injected code. Basically, this makes
+                -- conform.nvim format python codeblocks inside a markdown file.
+                markdown = { "inject" },
+            },
+            -- enable format-on-save
+            format_on_save = {
+                -- when no formatter is set up for a filetype, fall back to formatting via the LSP.
+                lsp_fallback = true,
+            },
+        },
+    },
 }
