@@ -1,4 +1,5 @@
 return {
+    { "artemave/workspace-diagnostics.nvim" } -- show diagnostics across all files of the same type
     --    {
     --        "luckasRanarison/nvim-devdocs",
     --        dependencies = {
