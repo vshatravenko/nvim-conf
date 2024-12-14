@@ -6,5 +6,7 @@ return {
     'shellcheck',
     'ansible-lint',
     'ansible-language-server',
+    'markdownlint',
+    'gopls',
   },
 }
