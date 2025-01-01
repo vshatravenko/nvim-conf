@@ -635,6 +635,13 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        html = {
+          filetypes = { 'html', 'gotmpl' },
+        },
+        --        templ = {
+        --          filetypes = { 'html', 'gotmpl' },
+        --        },
+        elixirls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -794,7 +801,7 @@ require('lazy').setup({
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
           --  This will expand snippets if the LSP sent a snippet.
-          ['<CR>'] = cmp.mapping.confirm { select = true },
+          ['<CR>'] = cmp.mapping.confirm { select = true, behavior = cmp.ConfirmBehavior.Replace },
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines

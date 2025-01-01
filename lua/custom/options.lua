@@ -37,3 +37,14 @@ vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+
+vim.filetype.add {
+  extension = {
+    gotmpl = 'gotmpl',
+  },
+  pattern = {
+    ['.*/templates/.*%.tpl'] = 'helm',
+    ['.*/templates/.*%.ya?ml'] = 'helm',
+    ['helmfile.*%.ya?ml'] = 'helm',
+  },
+}
