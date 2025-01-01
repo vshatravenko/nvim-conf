@@ -691,6 +691,13 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        html = {
+          filetypes = { 'html', 'gotmpl' },
+        },
+        --        templ = {
+        --          filetypes = { 'html', 'gotmpl' },
+        --        },
+        elixirls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },

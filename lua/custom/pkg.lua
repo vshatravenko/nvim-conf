@@ -8,5 +8,8 @@ return {
     'ansible-language-server',
     'markdownlint',
     'gopls',
+    'elixir-ls',
+    'html-lsp',
+    'templ',
   },
 }
