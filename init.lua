@@ -691,6 +691,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        tailwindcss = { 'html', 'templ' },
         html = {
           filetypes = { 'html', 'templ' },
         },
