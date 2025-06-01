@@ -692,11 +692,12 @@ require('lazy').setup({
         --
 
         html = {
-          filetypes = { 'html', 'gotmpl' },
+          filetypes = { 'html', 'templ' },
         },
-        --        templ = {
-        --          filetypes = { 'html', 'gotmpl' },
-        --        },
+        cssls = {},
+        templ = {
+          filetypes = { 'templ' },
+        },
         bashls = {},
 
         elixirls = {},
@@ -788,6 +789,7 @@ require('lazy').setup({
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         python = { 'isort', 'black' },
+        templ = { 'html', 'tailwindcss', 'templ' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
