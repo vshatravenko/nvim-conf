@@ -9,6 +9,7 @@ return {
     'bash-language-server',
     'markdownlint',
     'gopls',
+    'golangci-lint',
     'elixir-ls',
     'html-lsp',
     'templ',
