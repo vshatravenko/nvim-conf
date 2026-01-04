@@ -15,7 +15,7 @@ return {
     },
     init = function()
       -- Trim trailing whitespaces
-      vim.keymap.set('n', '<leader>T', require('whitespace-nvim').trim)
+      vim.keymap.set('n', '<leader>T', require('whitespace-nvim').trim, { desc = 'Trim all trailing whitespace' })
     end,
   },
   {
